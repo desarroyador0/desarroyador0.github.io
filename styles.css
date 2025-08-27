@@ -23,6 +23,7 @@ header {
   width: 100%;
   padding: 10px 20px;
   box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
 .search-box {
@@ -34,6 +35,7 @@ header {
   background-color: #0D0D0D;
   border-bottom: 2px solid rgb(0, 0, 0);
   margin-left: 20px;
+  flex-shrink: 1;
 }
 
 .search-box input {
@@ -73,6 +75,7 @@ header {
   height: 90px;
   width: auto;
   cursor: pointer;
+  max-width: 100%;
 }
 
 .logandmen {
@@ -89,6 +92,7 @@ header {
   display: flex;
   gap: 60px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .logo-container {
@@ -101,6 +105,7 @@ header {
   height: 300px;
   width: auto;
   cursor: pointer;
+  max-width: 100%;
 }
 
 /* Dropdown */
@@ -160,11 +165,10 @@ main {
   min-height: 150vh;
 }
 a {
-  text-decoration: none;   /* ❌ Saca el subrayado */
-  color: inherit;          /* ✅ Mantiene el color del texto original */
-  display: block;          /* Hace que ocupe todo el div (opcional, pero útil si querés que toda la tarjeta sea clickeable) */
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
-
 
 h1 {
   font-family: 'Playfair Display', serif;
@@ -184,7 +188,7 @@ p {
 
 body {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   background: linear-gradient(to right, #352620, #331f0e);
@@ -226,6 +230,7 @@ body {
 .carousel-slide img {
   width: 100%;
   flex-shrink: 0;
+  max-width: 100%;
 }
 
 /* Botones */
@@ -415,6 +420,10 @@ body {
     gap: 20px;
     flex-wrap: wrap;
   }
+
+  .carousel-container {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -435,5 +444,24 @@ body {
   .dropbtn {
     font-size: 0.9rem;
     padding: 8px 10px;
+  }
+
+  .carousel-container {
+    max-width: 100%;
+  }
+
+  .prev, .next {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .promo-text {
+    font-size: 0.85rem;
+    margin: 5px 0;
+  }
+
+  .logobody {
+    height: auto;
+    max-width: 90%;
   }
 }
