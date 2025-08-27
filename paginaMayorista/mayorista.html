@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mayoristas - Mates Artesanales</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="mayorista.css" />
+  </head>
+  <body>
+    <header>
+      <div class="top-bar">
+        <div class="search-box">
+          <input type="text" id="buscar" placeholder="Buscar productos..." />
+          <button onclick="buscarTexto()">🔍</button>
+        </div>
+
+        <h2 class="promo-text">40 % off en tu primera compra</h2>
+        <a href="../index.html">
+          <img
+            src="../elementos/armate2.png"
+            alt="Logo de Armate"
+            class="logo"
+          />
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <h1>Mayoristas</h1>
+        <p>Llevá la experiencia del mate a tu negocio con confianza y calidad.</p>
+        <a href="#ref" class="btn-cta">Solicitar catálogo</a>
+      </section>
+
+      <!-- Beneficios -->
+      <section class="beneficios">
+        <div class="beneficio">
+          <h3>Precios Competitivos</h3>
+          <p>Valores accesibles para que tu negocio crezca con nosotros.</p>
+        </div>
+        <div class="beneficio">
+          <h3>Calidad Garantizada</h3>
+          <p>Mates y accesorios cuidadosamente seleccionados.</p>
+        </div>
+        <div class="beneficio">
+          <h3>Envíos a Todo el País</h3>
+          <p>Logística confiable para que recibas tu pedido en tiempo y forma.</p>
+        </div>
+        <div class="beneficio">
+          <h3>Atención Personalizada</h3>
+          <p>Un asesor exclusivo para acompañarte en cada compra.</p>
+        </div>
+      </section>
+
+      <!-- Info -->
+      <section class="info">
+        <h2>Condiciones Mayoristas</h2>
+        <ul>
+          <li><strong>Pedido mínimo:</strong> 10 unidades</li>
+          <li><strong id="ref">Formas de pago:</strong> Transferencia, Mercado Pago, tarjetas</li>
+          <li><strong>Tiempos de entrega:</strong> 3 a 7 días hábiles</li>
+        </ul>
+      </section>
+
+      <!-- Contacto -->
+      <section class="contacto" id="contacto">
+        <h2 calss="referencia">Contacto Exclusivo Mayoristas</h2>
+        <form>
+          <input type="text" placeholder="Nombre completo" required>
+          <input type="text" placeholder="Empresa / Negocio" required>
+          <input type="email" placeholder="Correo electrónico" required>
+          <input type="tel" placeholder="Teléfono" required>
+          <textarea placeholder="Tu mensaje" required></textarea>
+          <button type="submit">Enviar consulta</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Nosotros</h3>
+          <p>
+            Somos una tienda dedicada a los mates artesanales de primera
+            calidad.
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Enlaces</h3>
+          <a href="../index.html">Inicio</a><br />
+          <a href="#">Productos</a><br />
+          <a href="#">Contacto</a>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contacto</h3>
+          <p>Email: contacto@mates.com</p>
+          <p>Tel: +54 11 1234 5678</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2025 Mates Artesanales | Todos los derechos reservados
+      </div>
+    </footer>
+
+    <script src="mayorista.js"></script>
+  </body>
+</html>
+

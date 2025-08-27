@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redes Sociales - Mates Artesanales</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato&display=swap" rel="stylesheet">
+  <style>
+    /* ===== Reset y body ===== */
+    body {
+      margin: 0;
+      font-family: 'Lato', sans-serif;
+      background: linear-gradient(to right, #352620, #331f0e);
+      color: #333;
+    }
+
+    header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0D0D0D;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.8rem;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  /* Cambiamos a fila para que estén al lado */
+  display: flex;
+  flex-direction: column;
+  height: 105px;
+  padding: 0; /* para evitar margenes no deseados */
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between; /* buscador izquierda, texto centro, logo derecha */
+  align-items: center;
+  position: relative; 
+  width: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.search-box {
+  display: flex;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 0px;
+  overflow: hidden; /* Para que no haya separación entre input y botón */
+  background-color: #0D0D0D;
+  border-bottom: 2px solid rgb(0, 0, 0); /* Línea solo abajo */
+
+  margin-left: 20px; /* opcional, para que no quede pegado al borde */
+}
+
+.search-box input {
+  flex: 1;
+  padding: 12px 16px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: white;
+  background-color: #0D0D0D;
+}
+
+.search-box button {
+  background: #0D0D0D; /* Color elegante */
+  color: rgb(73, 51, 39);
+  border: none;
+  padding: 0 18px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.search-box button:hover {
+  background: #372100;
+}
+
+
+/* texto promo centrado */
+.promo-text {
+  position: absolute; /* para centrar */
+  left: 45%;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  flex-grow: 1; /* que ocupe el espacio central */
+}
+
+/* logo a la derecha */
+.logo {
+  height: 90px; /* ajusta alto del logo */
+  width: auto;
+  cursor: pointer;
+}
+    main {
+      padding-top: 150px;
+      padding-bottom: 50px;
+    }
+
+    /* ===== Contenedor principal ===== */
+    .social-container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .social-container h1 {
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 20px;
+    }
+
+    .social-container p {
+      margin-bottom: 30px;
+      color: #555;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .social-link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: #333;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .social-link:hover {
+      transform: translateY(-5px);
+      color: #f5a623;
+    }
+
+    .social-link img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 10px;
+    }
+
+    .social-link span {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    /* ===== Footer ===== */
+    .footer {
+      background-color: #0D0D0D;
+      color: white;
+      padding: 40px 20px 20px;
+      font-family: 'Lato', sans-serif;
+      margin-top: 50px;
+    }
+
+    .footer-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .footer-section h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #f5a623;
+    }
+
+    .footer-section p,
+    .footer-section a {
+      color: #ccc;
+      font-size: 0.9rem;
+      text-decoration: none;
+    }
+
+    .footer-section a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      font-size: 0.8rem;
+      padding-top: 20px;
+      border-top: 1px solid #333;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="top-bar">
+      <div class="search-box">
+        <input type="text" id="buscar" placeholder="Buscar productos..." />
+        <button onclick="buscarTexto()">🔍</button>
+      </div>
+      <a href="../index.html">
+        <img src="../elementos/armate2.png" alt="Logo de Armate" class="logo">
+      </a>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+    <section class="social-container">
+      <h1>Redes Sociales</h1>
+      <p>Seguí nuestras redes y enterate de todas las novedades, promociones y productos exclusivos.</p>
+      
+      <div class="social-links">
+        <a href="https://www.facebook.com/" target="_blank" class="social-link">
+          <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook">
+          <span>Facebook</span>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" class="social-link">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+          <span>Instagram</span>
+        </a>
+        <a href="https://www.twitter.com/" target="_blank" class="social-link">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
+          <span>Twitter</span>
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank" class="social-link">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+          <span>LinkedIn</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Nosotros</h3>
+        <p>Somos una tienda dedicada a los mates artesanales de primera calidad.</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Enlaces</h3>
+        <a href="../index.html">Inicio</a><br>
+        <a href="#">Productos</a><br>
+        <a href="#">Contacto</a>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contacto</h3>
+        <p>Email: contacto@mates.com</p>
+        <p>Tel: +54 11 1234 5678</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; 2025 Mates Artesanales | Todos los derechos reservados
+    </div>
+  </footer>
+
+</body>
+</html>

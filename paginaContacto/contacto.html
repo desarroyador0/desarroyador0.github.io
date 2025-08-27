@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Mates Artesanales</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="top-bar">
+      <div class="search-box">
+        <input type="text" id="buscar" placeholder="Buscar productos..." />
+        <button onclick="buscarTexto()">🔍</button>
+      </div>
+
+      <h2 class="promo-text">40 % off en tu primera compra</h2>
+      <a href="../index.html">
+        <img src="../elementos/armate2.png" alt="Logo de Armate" class="logo">
+      </a>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+    <section class="contact-container">
+      <h1>Contacto</h1>
+      <p class="intro-text">Si tenés alguna consulta o querés realizar un pedido especial, completá el formulario o utilizá nuestros datos de contacto.</p>
+
+      <div class="contact-info">
+        <div>
+          <h3>Email</h3>
+          <p>contacto@mates.com</p>
+        </div>
+        <div>
+          <h3>Teléfono</h3>
+          <p>+54 11 1234 5678</p>
+        </div>
+        <div>
+          <h3>Dirección</h3>
+          <p>Calle Falsa 123, Buenos Aires, Argentina</p>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        <input type="email" name="email" placeholder="Tu correo" required>
+        <input type="text" name="asunto" placeholder="Asunto" required>
+        <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+        <p class="form-message"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Nosotros</h3>
+        <p>Somos una tienda dedicada a los mates artesanales de primera calidad.</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Enlaces</h3>
+        <a href="../index.html">Inicio</a><br>
+        <a href="#">Productos</a><br>
+        <a href="#">Contacto</a>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contacto</h3>
+        <p>Email: contacto@mates.com</p>
+        <p>Tel: +54 11 1234 5678</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; 2025 Mates Artesanales | Todos los derechos reservados
+    </div>
+  </footer>
+
+  <script src="contacto.js"></script>
+</body>
+</html>

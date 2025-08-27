@@ -1,0 +1,295 @@
+[
+  {
+    "id": 1,
+    "nombre": "Mate Imperial PREMIUM",
+    "precio": "60000",
+    "categoria": "Premium",
+    "stock": 10,
+    "destacado": true,
+    "descripcionCorta": "Mate artesanal de calabaza con forro de cuero vacuno.",
+    "descripcionLarga": "<p>Por su delicado trabajo artesanal, el <strong>Mate Imperial</strong> se convirtió en el anhelo de todo matero argentino.</p><p>Cada pieza es única, de trabajo artesano meticuloso, distinguiéndose cada mate imperial del resto.</p>",
+    "imagenes": [
+      "../elementos/descarga (1).jpeg",
+      "../elementos/descarga.jpeg",
+      "../elementos/Mate.jpeg"
+    ],
+    "material": "Calabaza brasilera con forro de cuero",
+    "color": "Marrón natural",
+    "tamano": "15 cm x 8 cm",
+    "mantenimiento": "Lavar a mano, secar al aire"
+  },
+  {
+    "id": 2,
+    "nombre": "Mate Torpedo de Acero",
+    "precio": "35000",
+    "categoria": "Clásicos",
+    "stock": 15,
+    "destacado": false,
+    "descripcionCorta": "Mate de acero inoxidable con interior térmico.",
+    "descripcionLarga": "<p>El Mate Torpedo es ideal para quienes buscan practicidad y durabilidad. Su interior térmico mantiene la temperatura perfecta durante más tiempo.</p>",
+    "imagenes": [
+      "../elementos/Mate.jpeg"
+    ],
+    "material": "Acero inoxidable",
+    "color": "Plateado",
+    "tamano": "12 cm x 7 cm",
+    "mantenimiento": "Apto lavavajillas"
+  },
+    {
+    "id": 2,
+    "nombre": "Mate Torpedo de Acero",
+    "precio": "35000",
+    "categoria": "Clásicos",
+    "stock": 15,
+    "destacado": false,
+    "descripcionCorta": "Mate de acero inoxidable con interior térmico.",
+    "descripcionLarga": "<p>El Mate Torpedo es ideal para quienes buscan practicidad y durabilidad. Su interior térmico mantiene la temperatura perfecta durante más tiempo.</p>",
+    "imagenes": [
+      "../elementos/Mate.jpeg"
+    ],
+    "material": "Acero inoxidable",
+    "color": "Plateado",
+    "tamano": "12 cm x 7 cm",
+    "mantenimiento": "Apto lavavajillas"
+},
+    {
+    "id": 2,
+    "nombre": "Mate Torpedo de Acero",
+    "precio": "35000",
+    "categoria": "Clásicos",
+    "stock": 15,
+    "destacado": false,
+    "descripcionCorta": "Mate de acero inoxidable con interior térmico.",
+    "descripcionLarga": "<p>El Mate Torpedo es ideal para quienes buscan practicidad y durabilidad. Su interior térmico mantiene la temperatura perfecta durante más tiempo.</p>",
+    "imagenes": [
+       "../elementos/Mate.jpeg"
+    ],
+    "material": "Acero inoxidable",
+    "color": "Plateado",
+    "tamano": "12 cm x 7 cm",
+    "mantenimiento": "Apto lavavajillas"
+},
+    {
+    "id": 2,
+    "nombre": "Mate Torpedo de Acero",
+    "precio": "35000",
+    "categoria": "Clásicos",
+    "stock": 15,
+    "destacado": false,
+    "descripcionCorta": "Mate de acero inoxidable con interior térmico.",
+    "descripcionLarga": "<p>El Mate Torpedo es ideal para quienes buscan practicidad y durabilidad. Su interior térmico mantiene la temperatura perfecta durante más tiempo.</p>",
+    "imagenes": [
+       "../elementos/Mate.jpeg"
+    ],
+    "material": "Acero inoxidable",
+    "color": "Plateado",
+    "tamano": "12 cm x 7 cm",
+    "mantenimiento": "Apto lavavajillas"
+},
+    {
+    "id": 2,
+    "nombre": "Mate Torpedo de Acero",
+    "precio": "35000",
+    "categoria": "Clásicos",
+    "stock": 15,
+    "destacado": false,
+    "descripcionCorta": "Mate de acero inoxidable con interior térmico.",
+    "descripcionLarga": "<p>El Mate Torpedo es ideal para quienes buscan practicidad y durabilidad. Su interior térmico mantiene la temperatura perfecta durante más tiempo.</p>",
+    "imagenes": [
+       "../elementos/Mate.jpeg"
+    ],
+    "material": "Acero inoxidable",
+    "color": "Plateado",
+    "tamano": "12 cm x 7 cm",
+    "mantenimiento": "Apto lavavajillas"
+},
+    {
+    "id": 2,
+    "nombre": "Mate Torpedo de Acero",
+    "precio": "35000",
+    "categoria": "Clásicos",
+    "stock": 15,
+    "destacado": false,
+    "descripcionCorta": "Mate de acero inoxidable con interior térmico.",
+    "descripcionLarga": "<p>El Mate Torpedo es ideal para quienes buscan practicidad y durabilidad. Su interior térmico mantiene la temperatura perfecta durante más tiempo.</p>",
+    "imagenes": [
+       "../elementos/Mate.jpeg"
+    ],
+    "material": "Acero inoxidable",
+    "color": "Plateado",
+    "tamano": "12 cm x 7 cm",
+    "mantenimiento": "Apto lavavajillas"
+},
+    {
+    "id": 2,
+    "nombre": "Mate Torpedo de Acero",
+    "precio": "35000",
+    "categoria": "Clásicos",
+    "stock": 15,
+    "destacado": false,
+    "descripcionCorta": "Mate de acero inoxidable con interior térmico.",
+    "descripcionLarga": "<p>El Mate Torpedo es ideal para quienes buscan practicidad y durabilidad. Su interior térmico mantiene la temperatura perfecta durante más tiempo.</p>",
+    "imagenes": [
+      "../elementos/Mate.jpeg"
+    ],
+    "material": "Acero inoxidable",
+    "color": "Plateado",
+    "tamano": "12 cm x 7 cm",
+    "mantenimiento": "Apto lavavajillas"
+},
+    {
+    "id": 2,
+    "nombre": "Mate Torpedo de Acero",
+    "precio": "35000",
+    "categoria": "Clásicos",
+    "stock": 15,
+    "destacado": false,
+    "descripcionCorta": "Mate de acero inoxidable con interior térmico.",
+    "descripcionLarga": "<p>El Mate Torpedo es ideal para quienes buscan practicidad y durabilidad. Su interior térmico mantiene la temperatura perfecta durante más tiempo.</p>",
+    "imagenes": [
+      "../elementos/Mate.jpeg"
+    ],
+    "material": "Acero inoxidable",
+    "color": "Plateado",
+    "tamano": "12 cm x 7 cm",
+    "mantenimiento": "Apto lavavajillas"
+},
+    {
+    "id": 2,
+    "nombre": "Mate Torpedo de Acero",
+    "precio": "35000",
+    "categoria": "Clásicos",
+    "stock": 15,
+    "destacado": false,
+    "descripcionCorta": "Mate de acero inoxidable con interior térmico.",
+    "descripcionLarga": "<p>El Mate Torpedo es ideal para quienes buscan practicidad y durabilidad. Su interior térmico mantiene la temperatura perfecta durante más tiempo.</p>",
+    "imagenes": [
+       "../elementos/Mate.jpeg"
+    ],
+    "material": "Acero inoxidable",
+    "color": "Plateado",
+    "tamano": "12 cm x 7 cm",
+    "mantenimiento": "Apto lavavajillas"
+},
+    {
+    "id": 2,
+    "nombre": "Mate Torpedo de Acero",
+    "precio": "35000",
+    "categoria": "Clásicos",
+    "stock": 15,
+    "destacado": false,
+    "descripcionCorta": "Mate de acero inoxidable con interior térmico.",
+    "descripcionLarga": "<p>El Mate Torpedo es ideal para quienes buscan practicidad y durabilidad. Su interior térmico mantiene la temperatura perfecta durante más tiempo.</p>",
+    "imagenes": [
+       "../elementos/Mate.jpeg"
+    ],
+    "material": "Acero inoxidable",
+    "color": "Plateado",
+    "tamano": "12 cm x 7 cm",
+    "mantenimiento": "Apto lavavajillas"
+},
+    {
+    "id": 2,
+    "nombre": "Mate Torpedo de Acero",
+    "precio": "35000",
+    "categoria": "Clásicos",
+    "stock": 15,
+    "destacado": false,
+    "descripcionCorta": "Mate de acero inoxidable con interior térmico.",
+    "descripcionLarga": "<p>El Mate Torpedo es ideal para quienes buscan practicidad y durabilidad. Su interior térmico mantiene la temperatura perfecta durante más tiempo.</p>",
+    "imagenes": [
+       "../elementos/Mate.jpeg"
+    ],
+    "material": "Acero inoxidable",
+    "color": "Plateado",
+    "tamano": "12 cm x 7 cm",
+    "mantenimiento": "Apto lavavajillas"
+},
+    {
+    "id": 2,
+    "nombre": "Mate Torpedo de Acero",
+    "precio": "35000",
+    "categoria": "Clásicos",
+    "stock": 15,
+    "destacado": false,
+    "descripcionCorta": "Mate de acero inoxidable con interior térmico.",
+    "descripcionLarga": "<p>El Mate Torpedo es ideal para quienes buscan practicidad y durabilidad. Su interior térmico mantiene la temperatura perfecta durante más tiempo.</p>",
+    "imagenes": [
+      "../elementos/Mate.jpeg"
+    ],
+    "material": "Acero inoxidable",
+    "color": "Plateado",
+    "tamano": "12 cm x 7 cm",
+    "mantenimiento": "Apto lavavajillas"
+},
+    {
+    "id": 2,
+    "nombre": "Mate Torpedo de Acero",
+    "precio": "35000",
+    "categoria": "Clásicos",
+    "stock": 15,
+    "destacado": false,
+    "descripcionCorta": "Mate de acero inoxidable con interior térmico.",
+    "descripcionLarga": "<p>El Mate Torpedo es ideal para quienes buscan practicidad y durabilidad. Su interior térmico mantiene la temperatura perfecta durante más tiempo.</p>",
+    "imagenes": [
+       "../elementos/Mate.jpeg"
+    ],
+    "material": "Acero inoxidable",
+    "color": "Plateado",
+    "tamano": "12 cm x 7 cm",
+    "mantenimiento": "Apto lavavajillas"
+},
+    {
+    "id": 2,
+    "nombre": "Mate Torpedo de Acero",
+    "precio": "35000",
+    "categoria": "Clásicos",
+    "stock": 15,
+    "destacado": false,
+    "descripcionCorta": "Mate de acero inoxidable con interior térmico.",
+    "descripcionLarga": "<p>El Mate Torpedo es ideal para quienes buscan practicidad y durabilidad. Su interior térmico mantiene la temperatura perfecta durante más tiempo.</p>",
+    "imagenes": [
+      "../elementos/Mate.jpeg"
+    ],
+    "material": "Acero inoxidable",
+    "color": "Plateado",
+    "tamano": "12 cm x 7 cm",
+    "mantenimiento": "Apto lavavajillas"
+},
+    {
+    "id": 2,
+    "nombre": "Mate Torpedo de Acero",
+    "precio": "35000",
+    "categoria": "Clásicos",
+    "stock": 15,
+    "destacado": false,
+    "descripcionCorta": "Mate de acero inoxidable con interior térmico.",
+    "descripcionLarga": "<p>El Mate Torpedo es ideal para quienes buscan practicidad y durabilidad. Su interior térmico mantiene la temperatura perfecta durante más tiempo.</p>",
+    "imagenes": [
+      "../elementos/Mate.jpeg"
+    ],
+    "material": "Acero inoxidable",
+    "color": "Plateado",
+    "tamano": "12 cm x 7 cm",
+    "mantenimiento": "Apto lavavajillas"
+},
+
+    {
+    "id": 2,
+    "nombre": "Mate Torpedo de Acero",
+    "precio": "35000",
+    "categoria": "Clásicos",
+    "stock": 15,
+    "destacado": false,
+    "descripcionCorta": "Mate de acero inoxidable con interior térmico.",
+    "descripcionLarga": "<p>El Mate Torpedo es ideal para quienes buscan practicidad y durabilidad. Su interior térmico mantiene la temperatura perfecta durante más tiempo.</p>",
+    "imagenes": [
+      "../elementos/Mate.jpeg"
+    ],
+    "material": "Acero inoxidable",
+    "color": "Plateado",
+    "tamano": "12 cm x 7 cm",
+    "mantenimiento": "Apto lavavajillas"
+}
+
+]

@@ -1,0 +1,476 @@
+html:
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Producto - Armate</title>
+  <link rel="stylesheet" href="producto.css">
+  <link rel="icon" href="../elementos/icono.png" type="image/x-icon" />
+  <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+
+ <header>
+      <div class="top-bar">
+        <div class="search-box">
+          <input type="text" id="buscar" placeholder="Buscar productos..." />
+          <button onclick="buscarTexto()">🔍</button>
+        </div>
+
+        <h2 class="promo-text">40 % off en tu primera compra</h2>
+        <a href="../index.html">
+        <img src="../elementos/armate2.png" alt="Logo de Armate" class="logo" />
+      </a>
+      </div>
+    </header>
+
+<main class="producto-detalle">
+ <div  class="carrusel">
+  <button id="prev" class="prev">&#10094;</button>
+  <div class="image-container">
+  <img id="imagenCarrusel" src="" alt="Imagen del producto">
+</div>
+  <button id="next" class="next">&#10095;</button>
+</div>
+
+
+  <div class="info-producto">
+    <h1 id="nombreProducto"></h1>
+    <h2 class="precio" id="precioProducto"></h2>
+    <p id="descripcionProducto"></p>
+    <button class="btn-comprar">Agregar al carrito</button>
+  </div>
+
+</main>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Nosotros</h3>
+      <p>Somos una tienda dedicada a los mates artesanales de primera calidad.</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Enlaces</h3>
+      <a href="../index.html">Inicio</a><br>
+      <a href="#">Productos</a><br>
+      <a href="#">Contacto</a>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contacto</h3>
+      <p>Email: contacto@mates.com</p>
+      <p>Tel: +54 11 1234 5678</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    &copy; 2025 Mates Artesanales | Todos los derechos reservados
+  </div>
+</footer>
+
+<script src="catalogoProductos.js"></script>
+<script src="cargaProducto.js"></script>
+
+</body>
+</html>
+
+css:
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0D0D0D;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.8rem;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.0);
+  /* Cambiamos a fila para que estén al lado */
+  display: flex;
+  flex-direction: column;
+  height: 105px;
+  padding: 0; /* para evitar margenes no deseados */
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between; /* buscador izquierda, texto centro, logo derecha */
+  align-items: center;
+  position: relative; 
+  width: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.search-box {
+  display: flex;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 0px;
+  overflow: hidden; /* Para que no haya separación entre input y botón */
+  background-color: #0D0D0D;
+  border-bottom: 2px solid rgb(0, 0, 0); /* Línea solo abajo */
+
+  margin-left: 20px; /* opcional, para que no quede pegado al borde */
+}
+
+.search-box input {
+  flex: 1;
+  padding: 12px 16px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: white;
+  background-color: #0D0D0D;
+}
+
+.search-box button {
+  background: #0D0D0D; /* Color elegante */
+  color: rgb(73, 51, 39);
+  border: none;
+  padding: 0 18px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.search-box button:hover {
+  background: #372100;
+}
+
+
+/* texto promo centrado */
+.promo-text {
+  position: absolute; /* para centrar */
+  left: 45%;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  flex-grow: 1; /* que ocupe el espacio central */
+}
+
+/* logo a la derecha */
+.logo {
+  height: 90px; /* ajusta alto del logo */
+  width: auto;
+  cursor: pointer;
+}
+
+.logandmen {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr; /* Menús izq | logo | menús der */
+  align-items: center;
+  margin-top: 140px;
+  margin-bottom: 25px;
+  gap: 150px;
+}
+
+/* texto promo centrado */
+.promo-text {
+  position: absolute; /* para centrar */
+  left: 45%;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  flex-grow: 1; /* que ocupe el espacio central */
+}
+
+/* logo a la derecha */
+.logo {
+  height: 90px; /* ajusta alto del logo */
+  width: auto;
+  cursor: pointer;
+}
+
+.logandmen {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr; /* Menús izq | logo | menús der */
+  align-items: center;
+  margin-top: 140px;
+  margin-bottom: 25px;
+  gap: 150px;
+}
+
+/* texto promo centrado */
+.promo-text {
+  position: absolute; /* para centrar */
+  left: 45%;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  flex-grow: 1; /* que ocupe el espacio central */
+}
+
+/* logo a la derecha */
+.logo {
+  height: 90px; /* ajusta alto del logo */
+  width: auto;
+  cursor: pointer;
+}
+
+.logandmen {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr; /* Menús izq | logo | menús der */
+  align-items: center;
+  margin-top: 140px;
+  margin-bottom: 25px;
+  gap: 150px;
+}
+
+body {
+  margin-top: 150px;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  font-family: 'Poppins', sans-serif; /* igual que index */
+  background-color: lab(32.36% 6.43 13.02);
+  color: #333;
+  line-height: 1.6;
+}
+
+
+
+/* ======== Contenedor principal ======== */
+.producto-detalle {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* ======== Carrusel de imágenes ======== */
+/* ======== Carrusel de imágenes ======== */
+.carrusel {
+  position: relative; /* necesario para los botones */
+  width: 100%;
+  max-width: 500px; 
+  margin: auto;
+}
+.image-container {
+  overflow: hidden;
+  display: inline-block;
+}
+#imagenCarrusel {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  cursor: zoom-in; /* cambia el cursor a lupa */;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+#imagenCarrusel:hover {
+  box-shadow: 20px 20px 20px rgba(0,0,0,0.2);
+  transform: scale(1.2); /* agranda la imagen al 120% */
+}
+
+/* Botones del carrusel */
+.carrusel .prev,
+.carrusel .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5); /* semitransparente */
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+
+.carrusel .prev:hover,
+.carrusel .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.carrusel .prev { left: 10px; }
+.carrusel .next { right: 10px; }
+
+
+/* ======== Info del producto ======== */
+.info-producto {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}   
+
+.info-producto h1 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.info-producto p {
+  font-size: 1rem;
+  color: #1d0d00;
+}
+
+.precio {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #222; /* rojo llamativo */
+}
+
+.btn-comprar {
+  padding: 15px;
+  background: #0D0D0D;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.btn-comprar:hover {
+  background: #444;
+}
+
+
+/* ======== Footer ======== */
+
+.footer {
+  background-color: #0D0D0D;
+  color: white;
+  padding: 40px 20px 20px;
+  font-family: 'Lato', sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #f5a623;
+}
+
+.footer-section p,
+.footer-section a {
+  color: #ccc;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.8rem;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+}
+
+catalogojs:
+ const productos = [
+  {
+    id: 1,
+    nombre: "Mate ImperialMate Imperial PREMIUM",
+    precio: "$60.000",
+    descripcion:`Por su delicado trabajo artesanal, el mate imperial se convirtió en el anhelo de todo matero argentino. 
+
+Cada pieza es única, de trabajo artesano meticuloso, distinguiéndose cada mate imperial del resto.
+
+Si desea completar la experiencia, tiene la opción de incluir una bombilla pico loro, una compañera perfecta para su mate.
+
+Si desea presentar su mate de manera especial, ofrecemos la opción de una caja de regalo, que agrega un toque de lujo a su obsequio.
+
+CARACTERÍSTICAS:
+- Mate de calabaza brasilera
+- Forrado en cuero vacuno
+- Base de 4 patas reforzadas.
+
+Vendemos únicamente calidad PREMIUM:
+- Cuero vacuno cubriendo la calabaza (no simil cuero)
+- Calabaza brasilera (no la del norte argentino que es más liviana y perforable).
+- Es un mate que con los cuidados correctos dura toda la vida.`,
+    imagenes: ["../elementos/descarga (1).jpeg", "../elementos/descarga.jpeg", "../elementos/Mate.jpeg"]
+  },
+  {
+    id: 2,
+    nombre: "Producto 2",
+    precio: "$25.000",
+    descripcion: "Descripción detallada del Producto 2.",
+    imagenes: ["../elementos/descarga.jpeg", "../elementos/descarga.jpeg", "../elementos/descarga.jpeg"]
+  }
+];
+
+cargaproducto js:
+// Obtener el ID del producto de la URL
+const params = new URLSearchParams(window.location.search);
+const id = parseInt(params.get("id"));
+
+// Buscar el producto
+const producto = productos.find(p => p.id === id);
+
+if (producto) {
+  // Cargar información del producto
+  document.getElementById("nombreProducto").textContent = producto.nombre;
+  document.getElementById("precioProducto").textContent = producto.precio;
+  document.getElementById("descripcionProducto").textContent = producto.descripcion;
+
+  // Configurar carrusel
+  let indexImagen = 0;
+  const imagenCarrusel = document.getElementById("imagenCarrusel");
+  const prevBtn = document.getElementById("prev");
+  const nextBtn = document.getElementById("next");
+
+  // Función para mostrar imagen según el índice
+  function mostrarImagen(i) {
+    if (i < 0) indexImagen = producto.imagenes.length - 1;
+    else if (i >= producto.imagenes.length) indexImagen = 0;
+    else indexImagen = i;
+
+      // Efecto fade-out y fade-in
+  imagenCarrusel.style.opacity = 0; // desaparece
+  setTimeout(() => {
+    imagenCarrusel.src = producto.imagenes[indexImagen]; // cambia la imagen
+    imagenCarrusel.style.opacity = 1; // aparece
+  }, 200); // tiempo del fade-out
+  }
+
+  // Inicializar con la primera imagen
+  mostrarImagen(0);
+
+  // Eventos de los botones
+  prevBtn.addEventListener("click", () => {
+    indexImagen--; 
+    mostrarImagen(indexImagen);
+  });
+
+  nextBtn.addEventListener("click", () => {
+    indexImagen++; 
+    mostrarImagen(indexImagen);
+  });
+
+  // Carrusel automático cada 4 segundos
+  setInterval(() => {
+    indexImagen++;
+    mostrarImagen(indexImagen);
+  }, 6000);
+
+} else {
+  // Producto no encontrado
+  document.querySelector(".producto-detalle").innerHTML = `
+    <p>Producto no encontrado</p>
+    <a href="../index.html">Volver a la tienda</a>
+  `;
+}

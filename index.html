@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- corregí esto -->
+    <title>Bienvenido a Armate</title>
+    <link rel="icon" href="elementos\icono.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="top-bar">
+        <div class="search-box">
+          <input type="text" id="buscar" placeholder="Buscar productos..." />
+          <button onclick="buscarTexto()">🔍</button>
+        </div>
+
+        <h2 class="promo-text">40 % off en tu primera compra</h2>
+        <a href="">
+        <img src="elementos/armate2.png" alt="Logo de Armate" class="logo" />
+      </a>
+      </div>
+    </header>
+
+    <main>
+      <div class="logandmen">
+        <div class="menusizquierda">
+          <div class="dropdown">
+            <button class="dropbtn">Productos</button>
+            <div class="dropdown-content">
+              <a href="#">Opción 1</a>
+              <a href="#">Opción 2</a>
+              <a href="#">Opción 3</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn" onclick="location.href='paginaMayorista/mayorista.html'">Mayoristas</button>
+            <div class="dropdown-content">
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn" onclick="location.href='paginaCorparativo/corporativo.html'">Corporativos</button>
+          </div>
+        </div>
+
+        <div class="logo-container">
+          <img
+            src="elementos/armate sin fondo.png"
+            alt="Logo de Armate"
+            class="logobody"
+          />
+        </div>
+        <div class="menusderecha">
+          <div class="dropdown">
+           <button class="dropbtn" onclick="location.href='paginaPF/preguntas.html'">Preguntas Frecuentes</button>
+            <div class="dropdown-content">
+              <a href="paginaPF/preguntas.html">¿Hacen envios?</a>
+              <a href="paginaPF/preguntas.html">¿Medios de pago?</a>
+              <a href="paginaPF/preguntas.html">¿Tienen garantias?</a>
+            </div>
+          </div>
+          <div class="dropdown">
+             <button class="dropbtn" onclick="location.href='paginaContacto/contacto.html'">Contacto</button>
+            
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn" onclick="location.href='social/social.html'">Redes Sociales</button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-container">
+        <div class="carousel-slide">
+          <img
+            src="elementos\Amarillo y Aguamarina Playa Collage Estacional Fondo de Pantalla de Escritorio.png"
+            alt="Imagen 1"
+          />
+          <img src="elementos\promocarucel.png" alt="Imagen 2" />
+          <img src="elementos\montañacarucel.png" alt="Imagen 3" />
+        </div>
+
+        <!-- Botones de navegación -->
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+      </div>
+      <h1 class="zonaproductos">Nuestros Productos</h1>
+      <section id="catalogo" class="productos">
+        
+      </section>
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3>Contacto</h3>
+            <p>Email: contacto@armate.com</p>
+            <p>Tel: +54 9 11 1234 5678</p>
+          </div>
+
+          <div class="footer-section">
+            <h3>Enlaces</h3>
+            <a href="#">Inicio</a>
+            <a href="#">Productos</a>
+            <a href="#">Ofertas</a>
+            <a href="#">Contacto</a>
+          </div>
+
+          <div class="footer-section">
+            <h3>Seguinos</h3>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 Armate. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+    </main>
+    <script src="scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Producto - Armate</title>
+  <link rel="stylesheet" href="producto.css">
+  <link rel="icon" href="../elementos/icono.png" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="top-bar">
+    <div class="search-box">
+      <input type="text" id="buscar" placeholder="Buscar productos..." />
+      <button onclick="buscarTexto()">🔍</button>
+    </div>
+    <h2 class="promo-text">40 % off en tu primera compra</h2>
+    <a href="../index.html">
+      <img src="../elementos/armate2.png" alt="Logo de Armate" class="logo" />
+    </a>
+  </div>
+</header>
+
+<main class="producto-detalle">
+  <!-- Carrusel de imágenes -->
+  <div class="carrusel">
+    <button id="prev" class="prev" aria-label="Imagen anterior">&#10094;</button>
+    <div class="image-container">
+      <img id="imagenCarrusel" src="" alt="Imagen del producto">
+    </div>
+    <button id="next" class="next" aria-label="Imagen siguiente">&#10095;</button>
+  </div>
+
+  <!-- Información del producto -->
+  <div class="info-producto">
+    <h1 id="nombreProducto"></h1>
+    <h2 class="precio" id="precioProducto"></h2>
+    <p id="descripcionProducto"></p>
+    <button class="btn-comprar">Agregar al carrito</button>
+    <button class="btn-consulta">Preguntar sobre este producto</button>
+  </div>
+
+  <!-- Beneficios y Garantías -->
+  <section class="beneficios">
+    <div class="beneficio-item">
+      <img src="../elementos/envio.png" alt="Envío rápido">
+      <p>Envío rápido y seguro</p>
+    </div>
+    <div class="beneficio-item">
+      <img src="../elementos/pago.png" alt="Pago seguro">
+      <p>Pago 100% seguro</p>
+    </div>
+    <div class="beneficio-item">
+      <img src="../elementos/garantia.png" alt="Garantía">
+      <p>Garantía de satisfacción</p>
+    </div>
+    <div class="beneficio-item">
+      <img src="../elementos/artesanal.png" alt="Artesanal">
+      <p>Productos artesanales certificados</p>
+    </div>
+  </section>
+
+  <!-- Especificaciones del producto -->
+  <section class="especificaciones">
+    <h3>Detalles del producto</h3>
+    <table>
+      <tr><td>Material:</td><td id="materialProducto"></td></tr>
+      <tr><td>Tamaño:</td><td id="tamanoProducto"></td></tr>
+      <tr><td>Color:</td><td id="colorProducto"></td></tr>
+      <tr><td>Mantenimiento:</td><td id="mantenimientoProducto"></td></tr>
+    </table>
+  </section>
+
+  <!-- Opiniones -->
+  <section class="opiniones">
+    <h3>Opiniones de clientes</h3>
+    <div class="opinion">
+      <p>★★★★★</p>
+      <p>"Excelente calidad y envío rápido."</p>
+    </div>
+    <div class="opinion">
+      <p>★★★★☆</p>
+      <p>"Hermoso mate artesanal, muy recomendable."</p>
+    </div>
+  </section>
+
+  <!-- Productos relacionados -->
+  <section class="productos-relacionados">
+    <h3>Productos relacionados</h3>
+    <div class="grid-productos" id="productosRelacionados">
+      <!-- Productos relacionados se cargan dinámicamente -->
+    </div>
+  </section>
+
+  <!-- Preguntas frecuentes -->
+  <section class="faq">
+    <h3>Preguntas frecuentes</h3>
+    <div class="faq-item">
+      <div class="faq-question">¿Cuánto tarda el envío?</div>
+      <div class="faq-answer">El envío se realiza en 3-5 días hábiles dependiendo de tu localidad.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">¿Puedo pagar con tarjeta?</div>
+      <div class="faq-answer">Sí, aceptamos todos los medios de pago principales, incluyendo tarjetas y transferencias.</div>
+    </div>
+  </section>
+
+  <!-- Certificaciones -->
+  <section class="certificaciones">
+    <h3>Certificaciones</h3>
+    <div class="cert-item">
+      <img src="../elementos/certificado1.png" alt="Certificado artesanal">
+    </div>
+    <div class="cert-item">
+      <img src="../elementos/certificado2.png" alt="Pago seguro">
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Nosotros</h3>
+      <p>Somos una tienda dedicada a los mates artesanales de primera calidad.</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Enlaces</h3>
+      <a href="../index.html">Inicio</a><br>
+      <a href="#">Productos</a><br>
+      <a href="#">Contacto</a>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contacto</h3>
+      <p>Email: contacto@mates.com</p>
+      <p>Tel: +54 11 1234 5678</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    &copy; 2025 Mates Artesanales | Todos los derechos reservados
+  </div>
+</footer>
+
+<script src="catalogoProductos.js"></script>
+<script src="cargaProducto.js"></script>
+<script src="preguntas.js"></script>
+</body>
+</html>
